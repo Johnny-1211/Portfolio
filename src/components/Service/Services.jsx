@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <Container id="service">
       <h4>
-        My <span className="green">service</span>
+        My <span className="orange">service</span>
       </h4>
       <h1>What I do</h1>
       <Cards>
@@ -23,7 +23,7 @@ const Services = () => {
                   rapid iteration, and cost-effectiveness, delivering scalable, high-quality applications.`}
           />
         </JackInTheBox>
-        <JackInTheBox> 
+        <JackInTheBox>
           <Card
             Icon={FaApple}
             title={"IOS apps development"}

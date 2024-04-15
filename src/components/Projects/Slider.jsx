@@ -7,24 +7,23 @@ import styled from 'styled-components';
 
 let data = [
   {
-    img: "./pexels-maxime-francis-2246476.jpg",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+    img: `${process.env.PUBLIC_URL}/assets/images/iosMovieBooking.png`,
+    disc: `This app is designed for online movie booking, built using Swift and SwiftUI. 
+    It includes a movie search feature for recent and popular movies, 
+    along with options for seat and time slot selection.`,
+    url: "https://github.com/Johnny-1211/IOS-MovieApp",
   },
   {
-    img: "./pexels-paul-ijsendoorn-33041.jpg",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+    img: `${process.env.PUBLIC_URL}/assets/images/iosWeatherClone.png`,
+    disc: `This iOS native weather clone utilizes location search and API fetching with Swift and SwiftUI. 
+            Additionally, it features snow and rain effects implemented with SpriteKit.`,
+    url: "https://github.com/Johnny-1211/IOS-WeatherApp",
   },
   {
-    img: "./pexels-pixabay-33545.jpg",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
-  },
-  {
-    img: "./pexels-pixabay-268533.jpg",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
-  },
-  {
-    img: "./pexels-piccinng-3075993.jpg",
-    disc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!",
+    img: `${process.env.PUBLIC_URL}/assets/images/kotlinExpenseTracker.png`,
+    disc: `This application serves as an expense tracker, offering a dashboard, transaction recording, and a pie chart to illustrate statistics. 
+            It was developed using Kotlin.`,
+    url: "https://github.com/Johnny-1211/ExpenseTracker",
   },
 ];
 
@@ -34,7 +33,7 @@ var settings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
   initialSlide: 0,
   arrows: false,

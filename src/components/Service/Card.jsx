@@ -5,19 +5,20 @@ const Card = (props) => {
 const {Icon,disc,title}= props
   return (
     <Container>
-      <span className='green'><Icon/></span>
-      <h1>{title}</h1>
+      <span>
+        <Icon />
+      </span>
+      <h1 className='orange'>{title}</h1>
       <p>{disc}</p>
     </Container>
-
-  )
+  );
 }
 
 export default Card
 
 const Container = styled.div`
-  width: 100%;
-  height: 260px;
+  width: 25vw;
+  height: 40vh;
   background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
   padding: 1rem;
   text-align: center;

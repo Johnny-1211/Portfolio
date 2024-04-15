@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Project = (props) => {
-  const {img,disc} = props.item
+  const {img,disc,url} = props.item
   return (
     <Container className='project'>
       <img src={img} alt="project" />
@@ -10,7 +10,7 @@ const Project = (props) => {
         <h1>Description</h1>
         <p>
           {disc}
-        <a href='#'>demo</a>
+        <a href={url}>Link</a>
         </p>
       </div>
     </Container>
@@ -54,6 +54,7 @@ const Container = styled.div`
       a {
         margin-left: 0.4rem;
         color: red;
+        font-weight: bold;
       }
     }
   }

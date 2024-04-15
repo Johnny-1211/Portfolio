@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Skill = () => {
   return (
-    <Container>
+    <Container id="skills">
       <h4>
-        My <span className="green">Tech Stack</span>
+        My <span className="orange">Tech Stack</span>
       </h4>
       <Icons>
         <img
@@ -52,7 +52,7 @@ const Skill = () => {
         />
       </Icons>
 
-      <h4 className="green">Tools</h4>
+      <h4 className="orange">Tools</h4>
       <Icons>
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"

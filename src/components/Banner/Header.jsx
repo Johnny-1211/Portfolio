@@ -5,13 +5,14 @@ import { FaCode } from "react-icons/fa6";
 
 const Header = () => {
     const [bar,setBar] = useState(false)
+
     return (
       <Container bar={bar}>
         <Logo>
-          <span className="green">
-            <FaCode /> 
-          </span> 
-          <h1>JohnnyTam</h1>
+          <span>
+            <FaCode />
+          </span>
+          <h1>Johnny Tam</h1>
         </Logo>
         <Nav bar={bar}>
           <span>
@@ -24,7 +25,7 @@ const Header = () => {
             <a href="#service">Service</a>
           </span>
           <span>
-            <a href="#project">Projects</a>
+            <a href="#projects">Projects</a>
           </span>
           <span>
             <a href="#footer">Contact</a>
@@ -52,7 +53,7 @@ const Container = styled.div`
     width: 90;
   }
 
-  .bars{
+  .bars {
     display: none;
   }
 
@@ -65,7 +66,7 @@ const Container = styled.div`
       align-items: center;
       justify-content: center;
       padding: 0.5rem;
-      z-index: 100;
+      z-index: 1000;
       .bar {
         position: absolute;
         width: 100%;
@@ -98,24 +99,30 @@ const Container = styled.div`
   }
 `;
 const Logo = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    span{
-        font-size: 1.8rem;
-    }
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  span {
+    font-size: 1.8rem;
+    color: orange;
+  }
 
-    h1{
-        font-weight: 600;
-        font-size: 1.2rem;
-    }
-`
-const Nav = styled.div`
+  h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+`;
+const Nav = styled.nav`
   @media (max-width: 640px) {
     position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: #01be96;
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(223, 87, 10, 1) 0%,
+      rgba(240, 179, 3, 1) 100%
+    );
+    /* background-color: #01be96; */
     top: 0;
     right: 0;
     left: 0;
@@ -158,8 +165,6 @@ const Nav = styled.div`
         opacity: 1;
       }
     }
-
-
   }
 `;
 

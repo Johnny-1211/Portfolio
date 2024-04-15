@@ -112,9 +112,14 @@ const Form = styled.div`
     button {
       width: 5rem;
       height: 1.8rem;
-      background-color: #01be96;
+      background: -webkit-linear-gradient(
+        180deg,
+        rgba(223, 87, 10, 1) 0%,
+        rgba(240, 179, 3, 1) 100%
+      );
       border: none;
       border-radius: 5px;
+      color: white;
       filter: drop-shadow(0px 4px 5px #01be9551);
       cursor: pointer;
       :hover {

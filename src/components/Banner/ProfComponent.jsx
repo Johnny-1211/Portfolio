@@ -2,19 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import {
   AiOutlineLinkedin,
-  AiOutlineFacebook,
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { IoLogoGithub } from "react-icons/io";
-
 const ProfComponent = () => {
   return (
     <Container id="home">
       <Texts>
         <h4>
-          Hello <span className="green">I'am</span>
+          Hello <span className="orange">I'am</span>
         </h4>
-        <h1 className="green">Johnny Tam</h1>
+        <h1 className="orange">Johnny Tam</h1>
         <h3>A Software Developer</h3>
         <h6>
           Currently, I'm a new graduated student from George Brown College
@@ -41,11 +39,6 @@ const ProfComponent = () => {
                 <AiOutlineLinkedin />
               </a>
             </span>
-            {/* <span>
-              <a href="#">
-                <AiOutlineFacebook />
-              </a>
-            </span> */}
             <span>
               <a href="https://www.instagram.com/tingyuenn/">
                 <AiOutlineInstagram />
@@ -56,9 +49,9 @@ const ProfComponent = () => {
       </Texts>
 
       <Profile>
-        <img src="./profileImage.jpg" alt="profile"></img>
+        <img src={process.env.PUBLIC_URL + '/assets/images/profileImage.jpg'} alt="profile"></img>
       </Profile>
-    </Container>
+    </Container> 
   );
 };
 
@@ -110,14 +103,18 @@ const Texts = styled.div`
     padding: 0.7rem 2rem;
     margin-top: 3rem;
     cursor: pointer;
-    background-color: #01be96;
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(223, 87, 10, 1) 0%,
+      rgba(240, 179, 3, 1) 100%
+    );
     border: none;
     border-radius: 1.5rem;
     color: #fff;
     font-weight: 500;
-    filter: drop-shadow(0px 10px 10px #01be9551);
+    filter: drop-shadow(0px 10px 10px #764f02d5);
     :hover {
-      filter: drop-shadow(0px 10px 10px #01be9570);
+      filter: drop-shadow(0px 10px 10px #ca95056e);
     }
   }
 `;
@@ -141,7 +138,11 @@ const Social = styled.div`
       width: 2.3rem;
       height: 2rem;
       clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-      background-color: #01be9570;
+      background: -webkit-linear-gradient(
+        180deg,
+        rgba(223, 87, 10, 1) 0%,
+        rgba(240, 179, 3, 1) 100%
+      );
       position: relative;
       transition: transform 400ms ease-in-out;
       :hover {
@@ -178,6 +179,6 @@ const Profile = styled.div`
   }
 
   :hover img {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
 `;

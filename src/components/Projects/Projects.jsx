@@ -4,15 +4,10 @@ import SliderComp from './Slider';
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id='projects'>
       <h1>
-        Recent <span className="green">project</span>
+        Recent <span className="orange">project</span>
       </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et
-        asperiores cum exercitationem officia rem amet minus magnam? Cum,
-        voluptatem?
-      </p>
       <Slide>
         <SliderComp />
       </Slide>

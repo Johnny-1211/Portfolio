@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ContactForm from "./ContactForm";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack, BsInstagram } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -25,26 +25,10 @@ const Footer = () => {
         <Slide direction="left" delay={1}>
           <h1>Portfolio</h1>
         </Slide>
-        {/* <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide>
-        </div> */}
         <div className="links">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
           </Slide>
-          <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+1 (437) 662-3588</a>
-            </Slide>
-          </div>
           <div>
             <Slide direction="left">
               <span>
@@ -75,13 +59,7 @@ const Footer = () => {
                 </a>
               </span>
             </Zoom>
-            {/* <Zoom>
-              <span>
-                <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom> */}
+
             <Zoom>
               <span>
                 <a href="https://www.instagram.com/tingyuenn/">
@@ -196,7 +174,11 @@ const Profile = styled.div`
 const ArrowUp = styled.div`
   width: 2rem;
   height: 2rem;
-  background-color: #01be96;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(223, 87, 10, 1) 0%,
+    rgba(240, 179, 3, 1) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;

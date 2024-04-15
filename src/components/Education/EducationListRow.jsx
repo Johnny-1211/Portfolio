@@ -40,11 +40,15 @@ const Date = styled.div`
 `;
 
 const Period = styled.div`
-    display: flex;
-    background-color: lightgreen;
-    color: green;
-    border-radius: 12px;
-    justify-content: center;
-    padding: 5px;
-    margin-bottom: 10px;
-`
+  display: flex;
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(223, 87, 10, 1) 0%,
+    rgba(240, 179, 3, 1) 100%
+  );
+  color: white;
+  border-radius: 12px;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 10px;
+`;
